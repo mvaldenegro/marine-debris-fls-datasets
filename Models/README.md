@@ -47,7 +47,7 @@ Sample image with labelling is as shown -: ![](img.png)
 
 * Classes
     >        0:  Background         
-    >        1:  Bottle         
+    >        1:  Bottle          
     >        2:  Can            
     >        3:  Chain          
     >        4:  Drink-carton   
