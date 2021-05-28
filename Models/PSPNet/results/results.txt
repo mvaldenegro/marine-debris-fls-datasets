@@ -225,4 +225,35 @@ TIME_PER_EPOCH        = 41s
 
 
 
+---------------------------------PSPInceptionResNetV2----------------------------------------------
+testLoss, testAccuracy, testIou = [0.0305, 0.9900, 0.5848]
+
+TRAIN AND VAL (on last epoch)
+trainLoss, trainAccuracy, trainIou = [0.0117, 0.9951, 0.7651]
+valLoss, valAccuracy, valIou       = [0.0257, 0.9914, 0.5927]
+
+TOTAL_EPOCHS_EXECUTED = 30
+TIME_PER_EPOCH 	      = 105s
+
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 465.19.01    Driver Version: 460.32.03    CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 00000000:00:04.0 Off |                    0 |
+| N/A   57C    P0    59W / 149W |  11043MiB / 11441MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
++-----------------------------------------------------------------------------+
+
+
+
 
