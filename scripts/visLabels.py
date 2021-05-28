@@ -9,9 +9,8 @@ import matplotlib.pyplot as plt
 
 # set the paths to the images and labels
 
-pathImgs = "/home/deepak/Deepak/Matias/M__/Code/Imgs_320_480"
-pathLabels = "/home/deepak/Deepak/Matias/M__/Code/Masks_320_480_Int"
-
+pathImgs = input("Enter path for images --> ")
+pathLabels = input("Enter path for labels --> ")
 
 
 # labels and corresponding intensity values
