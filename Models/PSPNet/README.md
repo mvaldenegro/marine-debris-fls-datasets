@@ -1,7 +1,7 @@
-## Semantic Segmentation using UNET with various encoders
+## Semantic Segmentation using PSPNET with various encoders.
 
 ### Training parameters
-* IMAGE SIZE = [480,320] 
+* IMAGE SIZE = [480,480] 
 * TRAINING_IMGS   = 1000
 * VALIDATION_IMGS = 251
 * TESTING_IMGS    = 617
@@ -11,4 +11,3 @@
 
 * OPTIMIZER = ADAM
 * LOSS      = SPARSE_CATEGORICAL_CROSSENTROPY
-

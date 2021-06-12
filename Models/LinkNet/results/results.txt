@@ -5,7 +5,7 @@ testLoss, testAccuracy, testIou = [0.05596581159379919, 0.98582745, 0.66978973]
 
 TRAIN AND VAL (on last epoch)
 trainLoss, trainIou, trainAccuracy = [0.0162, 0.9939, 0.7955]
-valLLos, valIou, valAccuracy       = [0.0535, 0.9860, 0.6644]
+valLLos, valAccuracy, valIou       = [0.0535, 0.9860, 0.6644]
 
 TOTAL_EPOCHS_EXECUTED = 30
 TIME_PER_EPOCH = 122s
