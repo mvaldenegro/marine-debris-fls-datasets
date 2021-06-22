@@ -66,4 +66,3 @@ for im in os.listdir(pathImgs):
     
     cv2.imshow("image with label", img)
     cv2.waitKey(0)
-    cv2.imwrite("img.png", img)
