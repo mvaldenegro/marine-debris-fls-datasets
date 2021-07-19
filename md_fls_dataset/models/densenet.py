@@ -40,7 +40,7 @@ def conv_block(x, growth_rate, name):
     x = layers.Concatenate(axis=bn_axis, name=name + '_concat')([x, x1])
     return x
 
-def DenseNet(blocks, input_shape, num_classes, width):
+def DenseNet(blocks, input_shape, num_classes):
     img_input = layers.Input(shape=input_shape)
 
     bn_axis = 3 if backend.image_data_format() == 'channels_last' else 1
@@ -80,5 +80,5 @@ def DenseNet(blocks, input_shape, num_classes, width):
 
     return model
 
-def DenseNet121(input_shape, num_classes, width):
+def DenseNet121(input_shape, num_classes):
     return DenseNet([6, 12, 24, 16], input_shape, num_classes)
