@@ -46,7 +46,7 @@ def DenseNet(blocks, input_shape, num_classes):
     bn_axis = 3 if backend.image_data_format() == 'channels_last' else 1
 
     x = layers.ZeroPadding2D(padding=((3, 3), (3, 3)))(img_input)
-    x = layers.Conv2D(2 * width, 7, strides=2, use_bias=False, name='conv1/conv')(x)
+    x = layers.Conv2D(blocks[0], 7, strides=2, use_bias=False, name='conv1/conv')(x)
     x = layers.BatchNormalization(
         axis=bn_axis, epsilon=1.001e-5, name='conv1/bn')(x)
     x = layers.Activation('relu', name='conv1/relu')(x)
