@@ -3,7 +3,7 @@
 import keras
 from keras import layers, backend, models
 
-def dense_block(x, blocks, name, width):
+def dense_block(x, blocks, width, name=None):
     for i in range(blocks):
         x = conv_block(x, width, name=name + '_block' + str(i + 1))
     return x
@@ -40,26 +40,26 @@ def conv_block(x, growth_rate, name):
     x = layers.Concatenate(axis=bn_axis, name=name + '_concat')([x, x1])
     return x
 
-def DenseNet(blocks, input_shape, num_classes):
+def DenseNet(blocks, input_shape, num_classes, width):
     img_input = layers.Input(shape=input_shape)
 
     bn_axis = 3 if backend.image_data_format() == 'channels_last' else 1
 
     x = layers.ZeroPadding2D(padding=((3, 3), (3, 3)))(img_input)
-    x = layers.Conv2D(blocks[0], 7, strides=2, use_bias=False, name='conv1/conv')(x)
+    x = layers.Conv2D(2 * width, 7, strides=2, use_bias=False, name='conv1/conv')(x)
     x = layers.BatchNormalization(
         axis=bn_axis, epsilon=1.001e-5, name='conv1/bn')(x)
     x = layers.Activation('relu', name='conv1/relu')(x)
     x = layers.ZeroPadding2D(padding=((1, 1), (1, 1)))(x)
     x = layers.MaxPooling2D(3, strides=2, name='pool1')(x)
 
-    x = dense_block(x, blocks[0], name='conv2')
+    x = dense_block(x, blocks[0], width, name='conv2')
     x = transition_block(x, 0.5, name='pool2')
-    x = dense_block(x, blocks[1], name='conv3')
+    x = dense_block(x, blocks[1], width, name='conv3')
     x = transition_block(x, 0.5, name='pool3')
-    x = dense_block(x, blocks[2], name='conv4')
+    x = dense_block(x, blocks[2], width, name='conv4')
     x = transition_block(x, 0.5, name='pool4')
-    x = dense_block(x, blocks[3], name='conv5')
+    x = dense_block(x, blocks[3], width, name='conv5')
 
     x = layers.BatchNormalization(
         axis=bn_axis, epsilon=1.001e-5, name='bn')(x)
@@ -80,5 +80,5 @@ def DenseNet(blocks, input_shape, num_classes):
 
     return model
 
-def DenseNet121(input_shape, num_classes):
-    return DenseNet([6, 12, 24, 16], input_shape, num_classes)
+def DenseNet121(input_shape, num_classes, width):
+    return DenseNet([6, 12, 24, 16], input_shape, num_classes, width)
