@@ -1,5 +1,5 @@
 # Forward-Looking Sonar Marine Debris Datasets
-Marine Debris Datasets captured with a Forward-Looking Sonar in a water tank and turntable using an ARIS Explorer 3000 Sonar.
+Marine-Debris Datasets captured with a Forward-Looking Sonar in a water tank and turntable using an ARIS Explorer 3000 Sonar.
 
 # Water Tank Dataset
 
