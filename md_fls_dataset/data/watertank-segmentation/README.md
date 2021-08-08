@@ -10,17 +10,17 @@
 * The labels (marine-debris-fls-datasets/md_fls_dataset/data/watertank-segmentation/Labels) are .png files with pixel values determining the labels
 * Class names and the corresponding pixel values in the labels are as follows-:
 > Pixel Value: Class Name
-    >>        0:  Background         
-    >>        1:  Bottle         
-    >>        2:  Can            
-    >>        3:  Chain          
-    >>        4:  Drink-carton   
-    >>        5:  Hook           
-    >>        6:  Propeller      
-    >>        7:  Shampoo-bottle 
-    >>        8:  Standing-bottle
-    >>        9:  Tire           
-    >>        10: Valve         
-    >>        11: Wall   
-    
+>>        0:  Background         
+>>        1:  Bottle         
+>>        2:  Can            
+>>        3:  Chain          
+>>        4:  Drink-carton   
+>>        5:  Hook           
+>>        6:  Propeller      
+>>        7:  Shampoo-bottle 
+>>        8:  Standing-bottle
+>>        9:  Tire           
+>>        10: Valve         
+>>        11: Wall   
+
 * Sample image with labels is as shown -: ![](img.png)
