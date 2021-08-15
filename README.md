@@ -19,7 +19,7 @@ Per-pixel segmentation labels have been made by Deepak Singh from Netaji Subhas 
 
 # Turntable Dataset
 
-
+The turntable dataset is captured with the sonar in a fixed position and pose, while objects are placed in a rotating turntable, allowing to capture a full yaw rotation of each object. These images are available [here](https://github.com/mvaldenegro/marine-debris-fls-datasets/tree/master/md_fls_dataset/data/turntable-cropped). For now only a classification task is available.
 
 # Acknowledgements
 This work has been partially supported by the FP7-PEOPLE-2013-ITN project ROBOCADEMY (Ref 608096) funded by the European Commission.
