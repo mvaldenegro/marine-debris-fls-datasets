@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<annotation>
+	<folder>Images</folder>
+	<filename>marine-debris-aris3k-1343.png</filename>
+	<path>Images/marine-debris-aris3k-1343.png</path>
+	<source>
+		<database>Forward-Looking Sonar Marine Debris Datasets</database>
+		<annotation>COCO Format - x y w h</annotation>
+		<images>Watertank Dataset</images>
+	</source>
+	<size>
+		<width>320</width>
+		<height>480</height>
+		<depth>1</depth>
+	</size>
+	<segmented>1</segmented>
+	<object>
+		<name>Wall</name>
+		<bndbox>
+			<x>10</x>
+			<y>38</y>
+			<w>31</w>
+			<h>51</h>
+		</bndbox>
+	</object>
+	<object>
+		<name>Drink-carton</name>
+		<bndbox>
+			<x>132</x>
+			<y>192</y>
+			<w>21</w>
+			<h>29</h>
+		</bndbox>
+	</object>
+	<object>
+		<name>Tire</name>
+		<bndbox>
+			<x>170</x>
+			<y>286</y>
+			<w>62</w>
+			<h>53</h>
+		</bndbox>
+	</object>
+</annotation>
