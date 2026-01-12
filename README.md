@@ -24,6 +24,7 @@ The turntable dataset is captured with the sonar in a fixed position and pose, w
 # Citation
 If you use our dataset, please cite the following paper:
 > M. Valdenegro-Toro, D. C. Padmanabhan, D. Singh, B. Wehbe and Y. Petillot, "The Marine Debris Forward-Looking Sonar Datasets," OCEANS 2025 Brest, BREST, France, 2025, pp. 1-10, doi: 10.1109/OCEANS58557.2025.11104623.
+
 This paper is also available in arXiv: https://arxiv.org/abs/2503.22880
 # Acknowledgements
 This work has been partially supported by the FP7-PEOPLE-2013-ITN project ROBOCADEMY (Ref 608096) funded by the European Commission.
